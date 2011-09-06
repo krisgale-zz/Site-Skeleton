@@ -1,0 +1,95 @@
+.right {float:right}
+.left {float:left;}
+.clear {clear:both;}
+
+html {font-family:Arial, Helvetica, sans-serif; background:url('../images/ui/bg_page.png') repeat-x 0 0 #fff; margin:0;}
+	
+* {margin:0; padding:0; list-style-type:none;}
+
+#container {width:; margin:0 auto;}
+.wrapper {width:; margin:0 auto;}
+
+img {border:none;}
+
+h2 {padding-bottom:10px; color:#;}
+h3 {padding-bottom:5px; color:#;}
+h4 {line-height:1.5em; color:#666; font-size:.9em;}
+a {text-decoration:none; color:#;}
+a:hover {text-decoration:underline; color:#;}
+
+/*88888888888888888888888888888888888888888888888888888888888888888888888
+						General Fieldsets
+88888888888888888888888888888888888888888888888888888888888888888888888*/
+
+input, textarea, select {color:#000; background-color:#fff; border:1px solid #666;  padding:5px; margin-bottom:5px;}
+textarea {width: 210px; height: 100px; font-family:Arial, Helvetica, sans-serif; font-size:.8em;}
+p textarea {font-size:1em;}
+input.errorField, textarea.errorField, select.errorField {border: 1px solid #FF0000; background-color: #948181;}
+
+/*88888888888888888888888888888888888888888888888888888888888888888888888
+						Clear Fix
+88888888888888888888888888888888888888888888888888888888888888888888888*/
+
+.clearfix:after {content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.clearfix {display:inline-block;}
+.clearfix {display:block;}
+
+/*88888888888888888888888888888888888888888888888888888888888888888888888
+						HEADER START
+88888888888888888888888888888888888888888888888888888888888888888888888*/
+
+#header{}
+
+#header #nav {clear:both;}
+#header #nav ul li {float:left; display:block;}
+#header #nav ul li a{text-decoration:none;}	
+#header #nav ul li a:hover, #header #nav ul li a.active{}
+
+#header #nav ul.dropdown li {position:relative; z-index:999;}
+#header #nav ul.dropdown li ul {position:absolute; display:none; z-index:999;}
+#header #nav ul.dropdown li ul li {display:block; clear:both;}
+#header #nav ul.dropdown li ul li a {background:#333; height:auto; width:150px; padding:10px; border-bottom:1px solid #666; color:#fff;}
+#header #nav ul.dropdown li ul li a:hover {background:#666;}
+
+#header .banner {}
+
+/*88888888888888888888888888888888888888888888888888888888888888888888888
+						CONTENT START
+88888888888888888888888888888888888888888888888888888888888888888888888*/
+
+#content{padding-bottom:35px;}
+
+#content p, #content ul, #content ol {line-height:1.5em; padding-bottom:15px; font-size:.8em;}
+#content ul.circle, #content ul.circle li, #content ol, #content ol li {margin-left:15px;}
+#content ul.circle, #content ul.circle li {list-style-type:circle;}
+#content ul ul {font-size:1em;}
+#content ol, #content ol li {list-style-type:decimal;}
+#content img.left, #content .alignleft {float:left; margin:0 10px 10px 0; clear:both;}
+#content img.right, #content .alignright {float:right; margin:0 0 10px 10px; clear:both;}
+#content .aligncenter {float:none; margin:0 auto 10px auto; clear:both; display:block;}
+
+#content #content-main {width:; overflow:hidden;}
+
+/*88888888888888888888888888888888888888888888888888888888888888888888888
+						SIDEBAR START
+88888888888888888888888888888888888888888888888888888888888888888888888*/
+
+#sidebar {width:; overflow:hidden;}
+
+#sidebar .contact {margin-bottom:15px;}
+#sidebar .contact h3 {color:#;}
+#sidebar .contact p {}
+#sidebar .contact input {}
+#sidebar .contact input[type=submit] {}
+
+/*88888888888888888888888888888888888888888888888888888888888888888888888
+						FOOTER START
+88888888888888888888888888888888888888888888888888888888888888888888888*/
+
+#footer{padding:15px 0; color:#fff;}
+#footer ul.links {overflow:hidden; padding-bottom:10px;}
+#footer ul.links li {float:left;}
+#footer ul.links a {padding: 0 10px; border-left:1px solid #fff;}
+#footer ul.links li.first a {padding: 0 10px 0 0; border:none;}
+#footer p, #footer ul {padding-bottom:5px; font-size:.8em;}
+#footer a {color:#fff;}

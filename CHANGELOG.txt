@@ -1,0 +1,12 @@
+--------
+2
+--------
+Updated to HTML5
+Added Modernizr for html5 browser support
+
+--------
+1.6.3
+--------
+Updated Pretty Photo
+Added Contact Form 7 CSS Support
+Added .gzip Sitemap file

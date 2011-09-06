@@ -1,0 +1,147 @@
+.right { float: right}
+.left { float: left; }
+.clear { clear: both; }
+
+body { font-family: Verdana, Geneva, sans-serif; background: url('../images/ui/bg_page.png') repeat-x 0 0 #fff; margin: 0; color: #333; }
+
+* { margin: 0; padding: 0; list-style-type: none; }
+
+#container { width: 1000px; margin: 0 auto; }
+.wrapper { width: 1000px; margin: 0 auto; }
+
+img { border: none; }
+
+h1 { line-height: 1.5em; color: #333; font-size: 2em; margin-bottom: .469em; }
+h2 { line-height: 1.5em; color: #333; font-size: 1.5em; margin-bottom: .417em; }
+h3 { padding-bottom: 5px; color: #333; font-size: 1.125em; margin-bottom: .278em; }
+h4 { line-height: 1.5em; color: #666; font-size: .875em; }
+a { text-decoration: underline; color: #999; }
+a:hover { text-decoration: none; color: #ccc; }
+
+pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; background: #333; padding: 0 1.5em; margin: 0 1.5em 1.5em; color: #fff; }
+small { font-size: 85%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+blockquote { display: block; padding: 1.5em 1.5em .5em 1.5em; margin: 0 1.5em 1.5em; background: #eee; font-style: italic; overflow: hidden; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+/*88888888888888888888888888888888888888888888888888888888888888888888888
+						HTML5 Resets
+88888888888888888888888888888888888888888888888888888888888888888888888*/
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+/*88888888888888888888888888888888888888888888888888888888888888888888888
+						General Fieldsets
+88888888888888888888888888888888888888888888888888888888888888888888888*/
+
+label { font-size: .75em; line-height: 1.5em; display: block; }
+input[type=text], input[type=password], input[type=email], input[type=file], textarea, select { color: #000; background-color: #fff; border: 1px solid #666; padding: 1%; margin-bottom: 10px; }
+input[type=submit] { background: #666; border: none; color: #fff; padding: 2%; }
+textarea { width: 98%; height: 100px; font-family: Arial, Helvetica, sans-serif; font-size: .75em; overflow: auto; vertical-align: top; resize: vertical; }
+p textarea { font-size: 1em; }
+
+/*88888888888888888888888888888888888888888888888888888888888888888888888
+						Clear Fix
+88888888888888888888888888888888888888888888888888888888888888888888888*/
+
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-block; }
+.clearfix { display: block; }
+
+/*88888888888888888888888888888888888888888888888888888888888888888888888
+						HEADER START
+88888888888888888888888888888888888888888888888888888888888888888888888*/
+
+header { margin: 20px 0 0;}
+
+header h1 { float: left; }
+
+header h2 { float: right; }
+
+header nav { clear: right; float: right; margin:0 0 20px; }
+header nav ul li { float: left; display: block; }
+header nav ul li a { text-decoration: none; display: block; padding: 10px 15px; font-size: .75em; margin: 0 15px; }	
+header nav ul li a:hover, #header nav ul li.active a { text-decoration: underline; }
+
+header nav ul li { position: relative; z-index: 999; }
+header nav ul li ul { position: absolute; display: none; z-index: 999; }
+header nav ul li ul li { display: block; clear: both; }
+header nav ul li ul li a { background: #333; height: auto; width: 150px; padding: 10px; border-bottom: 1px solid #666; color: #ccc; }
+header nav ul li ul li a:hover { background: #666; text-decoration: none; }
+
+header .banner { margin:0 0 20px; }
+header .banner ul, header .banner li, header .banner img {height:; width:; overflow:hidden;}
+
+/*88888888888888888888888888888888888888888888888888888888888888888888888
+						CONTENT START
+88888888888888888888888888888888888888888888888888888888888888888888888*/
+
+#content { padding-bottom: 35px; }
+
+#content p, #content ul, #content ol { line-height: 1.5em; margin-bottom: 1.5em; font-size: .75em; }
+#content ul.circle, #content ul.circle li, #content ol, #content ol li { margin-left: 1.5em; }
+#content ul.circle, #content ul.circle li { list-style-type: circle; }
+#content ul.circle ul, #content ul.circle ul li { list-style-type: disc; }
+#content ul ul, #content ol ol { font-size: 1em; }
+#content ol, #content ol li { list-style-type: decimal; }
+#content ol ol, #content ol ol li { list-style-type: lower-roman; }
+#content img.left, #content .alignleft { float: left; margin: 0 10px 10px 0; clear: both; }
+#content img.right, #content .alignright { float: right; margin: 0 0 10px 10px; clear: both; }
+#content .aligncenter { float: none; margin: 0 auto 10px auto; clear: both; display: block; }
+
+#content #content-main { width: 74%; float: left; }
+
+/*88888888888888888888888888888888888888888888888888888888888888888888888
+						SIDEBAR START
+88888888888888888888888888888888888888888888888888888888888888888888888*/
+
+aside { width: 24%; float: right; }
+
+aside .contact { margin-bottom: 15px; padding: 15px; background: #eee; }
+aside .contact h3 { }
+aside .contact p { }
+aside .contact input { }
+aside .contact input[type=submit] { }
+
+/*88888888888888888888888888888888888888888888888888888888888888888888888
+						FOOTER START
+88888888888888888888888888888888888888888888888888888888888888888888888*/
+
+footer { background: #333; padding: 15px 0; color: #fff; }
+footer nav ul { overflow: hidden; padding-bottom: 10px; }
+footer nav ul li { float: left; }
+footer nav ul a { padding: 0 10px; border-left: 1px solid #fff; }
+footer nav ul li:first-child a { padding: 0 10px 0 0; border: none; }
+footer p, footer ul { padding-bottom: 5px; font-size: .688em; }
+footer a { color: #fff; }
+
+
+/*88888888888888888888888888888888888888888888888888888888888888888888888
+				MEDIA QUERIES START
+88888888888888888888888888888888888888888888888888888888888888888888888*/
+
+@media only screen and (min-width: 480px) { 
+  /* Style adjustments for viewports 480px and over go here */
+
+}
+
+@media only screen and (min-width: 768px) { 
+  /* Style adjustments for viewports 768px and over go here */
+
+}
+
+@media only print { 
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter: none !important; -ms-filter: none !important; }
+  header, footer, aside, img, form { display: none !important; }
+  a { text-decoration: underline; }
+  pre, blockquote, tr, h2, h3 { page-break-inside: avoid; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+}

@@ -1,0 +1,18 @@
+ErrorDocument 404 /404.php
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# remove index.php
+# RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^/]+/)*index\.(html|php)\ HTTP/
+# RewriteRule ^(([^/]+/)*)index\.(html|php)$ http://%{HTTP_HOST}/$1 [R=301,L] 
+
+# add www
+# RewriteCond %{HTTP_HOST} !^www\.(.*)$ [NC]
+# RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+# add trailing slash
+# RewriteCond %{REQUEST_URI} ^/[^\.]+[^/]$
+# RewriteRule ^(.*)$ http://%{HTTP_HOST}/$1/ [R=301,L] 
+
+</IfModule>

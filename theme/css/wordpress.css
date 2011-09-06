@@ -1,0 +1,20 @@
+#content #content-main .entry {padding-bottom:10px; margin-bottom:10px; border-bottom:1px solid #ccc;}
+#content #content-main .entry h2 {padding-bottom:5px;}
+#content #content-main .entry .date {font-size:.7em; color:#666;}
+#content #content-main .entry ul, #content #content-main .entry ul li {margin-left:15px; list-style-type:disc;}
+
+#content p.wp-caption-text {padding:0 10px 5px 10px; font-style:italic; font-size:.75em; text-align:center;}
+
+#content #content-main ol.commentlist, #content #content-main ol.commentlist li {margin:0;}
+#content #content-main ol.commentlist, #content #content-main ul.children {font-size:1em;}
+#content #content-main ul.children {margin-left:20px;}
+#content #content-main ul.children li.comment {background:#ccc;}
+#content #content-main ol.commentlist .comment {padding:10px; border-bottom:1px solid #333; overflow:hidden; clear:both;}
+#content #content-main ol.commentlist .comment.even {background:#eee;}
+#content #content-main ol.commentlist .comment-meta a, #content #content-main ol.commentlist .comment .reply a {font-size:.75em; color:#666;}
+#content #content-main ol.commentlist .comment .reply {float:right;}
+#content #content-main ol.commentlist .comment .avatar {display:block; overflow:hidden; float:left; padding:0 10px 10px 0;}
+#content #content-main ol.commentlist .comment .comment-author {font-size:.8em;}
+#content #content-main ol.commentlist .comment p {clear:left;}
+
+#content .wpcf7-response-output, #content .wpcf7-not-valid-tip {font-size:13px; color:#333; background:#fff; z-index:999; width:300px;}
