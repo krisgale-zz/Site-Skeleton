@@ -1,6 +1,6 @@
-<aside id="sidebar">
+<aside class="sidebar">
 	<div class="contact">
-		<h3>Contact Us</h3>
+		<h2>Contact Us</h2>
 		<form>
 			<label for="textbox">Textbox Label</label>
 			<input type="text" value="textbox">

@@ -1,5 +1,5 @@
 </div><!--/end container-->
-<footer><div class="wrapper">
+<footer class="footer"><div class="wrapper">
 
 	<nav>
 		<ul>
@@ -12,9 +12,41 @@
 	
 	<p>Copyright <?php echo date('Y'); ?>. All rights reserved. <a href="#">Sitemap</a>.</p>
 	
-</div></footer><!--/end footer-->
+</div></footer><!--/end .footer-->
 
-<!--<script src="js/cufon.now.js"></script>-->
+<!--START CUFON
+<script src="js/cufon-yui.js"></script>
+<script src="js/Minion.font.js"></script>
+<script src="js/cufon.controls.js"></script>
+<script src="js/cufon.now.js"></script>
+END CUFON-->
+
+<!--START MOOTOOLS-->
+<script src="https://ajax.googleapis.com/ajax/libs/mootools/1.3.2/mootools-yui-compressed.js"></script>
+<?php if ($activePage == "home") { ?>
+<?php } ?>
+
+<?php if ($lightbox) { ?>
+<?php } ?>
+<!--END MOOTOOLS-->
+
+<!--START JQUERY-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/superfish.controls.js"></script>
+
+<?php if ($activePage == "home") { ?>
+<script src="js/jquery.cycle.all.min.js"></script>
+<script src="js/cycle.controls.js"></script>
+<?php } ?>
+
+<?php if ($lightbox) { ?>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/prettyPhotoController.js"></script>
+<link rel="stylesheet" href="css/prettyPhoto.css" media="screen">
+<?php } ?>
+<!--END JQUERY-->
 
 </body>
 </html>
