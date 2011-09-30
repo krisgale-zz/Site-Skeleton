@@ -1,4 +1,11 @@
 --------
+2.01
+--------
+Reformated Stylesheet for tabbing and organized property order
+Removed most px values from stylesheet, switched to ems and percents
+Removed use of IDs in HTML and CSS for easier modularity
+
+--------
 2
 --------
 Updated to HTML5
