@@ -7,8 +7,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
 <!--START OPEN GRAPH FOR FACEBOOK-->
-<meta property="og:title" content=""/>
-<meta property="og:type" content="website"/>
+<meta property="og:title" content="">
+<meta property="og:type" content="website">
 <meta property="og:url" content="">
 <meta property="og:image" content="images/ui/facebook.jpg">
 <meta property="og:site_name" content="">
@@ -27,8 +27,8 @@
 <div id="container">
 	<header class="header clearfix">
 		<a class="logo" href="#">Site Name</a>
-		<nav class="clearfix">
-			<ul>
+		<nav>
+			<ul class="clearfix">
 				<li><a href="#">Home</a></li>
 				<li><a href="#">About</a>
 					<ul>

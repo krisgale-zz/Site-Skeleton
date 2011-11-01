@@ -2,7 +2,7 @@
 <footer class="footer"><div class="wrapper">
 
 	<nav>
-		<ul>
+		<ul class="clearfix">
 			<li><a href="#">Home</a></li>
 			<li><a href="#">About</a></li>
 			<li><a href="#">Services</a></li>
