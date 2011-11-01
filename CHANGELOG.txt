@@ -1,4 +1,12 @@
 --------
+2.02
+--------
+Reformated Stylesheet for more global use of element styles
+Removed .content class from element styles
+Restructured layout of Stylsheet
+Added basic media queries for mobile view
+
+--------
 2.01
 --------
 Reformated Stylesheet for tabbing and organized property order
