@@ -1,35 +1,31 @@
-<?php
+<?php get_header(); ?>
 
-get_header();
-?>
-
-<div id="content" class="clearfix">
-	<div id="content-main">
+<section class="content clearfix">
+	<section class="content-main">
 		
-		<?php if (have_posts()) : ?>
+	<?php if (have_posts()) : ?>
         
-        <h2><?php single_cat_title(); ?></h2>
+	<h1><?php single_cat_title(); ?></h1>
         
-        <?php while (have_posts()) : the_post(); ?>
-        	<div class="entry">
-                <h3><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-                <p class="date"><?php the_time('l, F jS, Y') ?></p>
-                
-                <?php the_excerpt() ?>
-			</div><!--/end entry-->
-		<?php endwhile; ?>
+	<?php while (have_posts()) : the_post(); ?>
+	<article>
+		<h2><a href="<?php the_permalink() ?>" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+		<p class="date"><?php the_time('l, F jS, Y') ?></p>
+		<?php the_excerpt(); ?>
+	</article><!--/end article-->
+	<?php endwhile; ?>
 
-		<div class="navigation">
-			<div class="alignleft"><?php next_posts_link('&laquo; Older Entries') ?></div>
-			<div class="alignright"><?php previous_posts_link('Newer Entries &raquo;') ?></div>
-		</div>
-        
+	<div class="clearfix">
+		<p class="right"><?php previous_posts_link('Newer Entries &raquo;') ?></p>
+		<p class="left"><?php next_posts_link('&laquo; Older Entries') ?></p>
+	</div>
+
 	<?php else : ?>
-    	<h2>Sorry nothing here yet...</h2>
-        <p>Please check back later for future updates.</p>
+    		<h1>Sorry nothing here yet...</h1>
+        	<p>Please check back later for future updates.</p>
     <?php endif; ?>
 
-	</div><!--/end content-main-->
-<?php get_sidebar(); ?>
-</div><!--/end content-->
+	</section><!--/end .content-main-->
+	<?php get_sidebar(); ?>
+</section><!--/end .content-->
 <?php get_footer(); ?>

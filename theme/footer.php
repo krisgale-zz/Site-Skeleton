@@ -1,6 +1,6 @@
-	<div id="footer">
+	<footer class="footer">
     
-    	<?php wp_nav_menu(array('menu' => 'footer', 'menu_class' => 'links', 'container' => '')); ?>
+    	<?php wp_nav_menu(array('menu' => 'footer', 'menu_class' => 'links clearfix', 'container' => '')); ?>
     
 	</div><!--/end footer-->
     
