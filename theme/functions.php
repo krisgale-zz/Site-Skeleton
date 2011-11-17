@@ -1,7 +1,7 @@
 <?php
 /**
  * @package WordPress
- * @subpackage philmadelphia
+ * @subpackage O3 World
  */
 
 add_theme_support('menus');
