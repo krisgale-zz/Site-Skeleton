@@ -17,7 +17,8 @@
 
 <link rel="shortcut icon" href="images/ui/favicon.ico">
 <link rel="stylesheet" href="css/style.css">
-<link href="blog/feed/" type="application/rss+xml" rel="alternate" title="Site Name's RSS Feed">
+<link rel="alternate" href="blog/feed/" type="application/rss+xml" title="Site Name's RSS Feed">
+<link rel="canonical" href="#">
 <!--[if IE]><link rel="stylesheet" href="css/ie.css"><![endif]-->
 
 <script src="js/modernizr-2.0.6.min.js"></script>

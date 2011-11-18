@@ -1,4 +1,11 @@
 --------
+2.03
+--------
+Made updates to theme directory for added WordPress functions
+Added enqueue methods for stylesheet and condensed javascript
+Added link canonical
+
+--------
 2.02
 --------
 Reformated Stylesheet for more global use of element styles
