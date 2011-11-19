@@ -4,6 +4,7 @@
 <title><?php echo $pageTitle; ?></title>
 <meta name="description" content="<?php echo $description; ?>">
 <meta name="keywords" content="<?php echo $keywords; ?>">
+<meta name="author" content="">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
 <!--START OPEN GRAPH FOR FACEBOOK-->
@@ -18,7 +19,7 @@
 <link rel="shortcut icon" href="images/ui/favicon.ico">
 <link rel="stylesheet" href="css/style.css">
 <link rel="alternate" href="blog/feed/" type="application/rss+xml" title="Site Name's RSS Feed">
-<link rel="canonical" href="#">
+<link rel="canonical" href="">
 <!--[if IE]><link rel="stylesheet" href="css/ie.css"><![endif]-->
 
 <script src="js/modernizr-2.0.6.min.js"></script>

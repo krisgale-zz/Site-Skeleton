@@ -1,4 +1,11 @@
 --------
+2.1
+--------
+Grabbed the best of the best from 320 and up and HTML5 Boilerplate stylesheet
+Renamed Repository
+Added role = main to content section
+
+--------
 2.03
 --------
 Made updates to theme directory for added WordPress functions

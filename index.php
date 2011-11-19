@@ -6,7 +6,7 @@ $activePage = "home";
 require_once ('includes/header.php'); 
 ?>
 
-<section class="content clearfix">
+<section class="content clearfix" role="main">
 	<section class="content-main">
 		
 		<img class="right" src="images/bear_dance.gif" alt="dancing bear" width="300" />
