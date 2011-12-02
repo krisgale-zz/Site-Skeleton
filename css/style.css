@@ -47,6 +47,14 @@ a:hover,
 a:focus 	{ text-decoration: none; color: #ccc; }
 a:focus 	{ outline: thin dotted; }
 
+a.button			{ margin-bottom: 1.125em; padding: .5em 1em; display: inline-block; font-size: .75em; background: #333; color: #fff; text-decoration: none; border-radius: 5px; cursor: pointer; }
+a.button:hover,
+a.button:focus		{ background: #666; }
+a.button + a.button	{ margin-left: 1em; }
+p a.button,
+ul a.button,
+dl a.button			{ margin: 0; font-size: 1em; }
+
 p,
 ul,
 ol,
@@ -63,6 +71,8 @@ ol ol 			{ font-size: 1em; }
 ol 				{ list-style-type: decimal; }
 ol ol 			{ list-style-type: lower-roman; }
 
+ul.inline		{ margin: 0; font-size: 1em; }
+
 img 			{ max-width: 100%; display: block; }
 img.left,
 .alignleft 		{ margin: 0 .75em .75em 0; float: left; clear: both; }
@@ -70,15 +80,15 @@ img.right,
 .alignright 	{ margin: 0 0 .75em .75em; float: right; clear: both; }
 .aligncenter 	{ margin: 0 auto .75em auto; float: none; clear: both; display: block; }
 
-figure 			{ margin-bottom : 1.25em; }
+figure 			{ margin-bottom : .375em; }
 figure img,
 figure object,
 figure embed 	{ margin-bottom : .75em; max-width : 100%; }
 figcaption 		{ display : block; font-style : italic; }
 
-table 	{ border-collapse: collapse; border-spacing: 0; }
-th		{ padding: 1em; font-size: .875em; color: #fff; background: #333; }
-td 		{ padding: 1em; font-size: .75em; vertical-align: top; }
+table 	{ margin-bottom: 1.125em; border-collapse: collapse; border-spacing: 0; border-top: 1px solid #666; border-left: 1px solid #666; }
+th		{ padding: 1em; font-size: .875em; color: #fff; background: #333; border-right: 1px solid #666; border-bottom: 1px solid #666; }
+td 		{ padding: 1em; font-size: .75em; vertical-align: top; border-right: 1px solid #666; border-bottom: 1px solid #666; }
 
 pre,
 code,
@@ -103,21 +113,23 @@ hr 	{ margin: 0 0 1.25em; padding: 0; height: 1px; display: block; border: 0; bo
 
 /* ===HEADER START=== */
 
-.header 	{ margin: 1.25em 0 0;}
+.header	{ margin: 1.25em 0 0;}
 
-.header .logo { display: block; text-indent:-9999px; overflow:hidden; background: url('../images/ui/logo.png') 0 0 no-repeat; float: left; }
+.header .logo	{ display: block; text-indent: -9999px; overflow: hidden; background: url('../images/ui/logo.png') 0 0 no-repeat; float: left; }
 
-.header nav 			{ margin:0 0 1.25em; clear: right; float: right; }
-.header nav li 		{ float: left; display: block; }
+.header nav 			{ margin: 0 0 1.25em; clear: right; float: right; }
+.header nav li 			{ float: left; display: block; }
 .header nav a 			{ margin: 0 1em; padding: .75em 1em; text-decoration: none; display: block; }	
 .header nav a:hover,
-.header nav li.active a 	{ text-decoration: underline; }
+.header nav li.active a { text-decoration: underline; }
 
-.header nav li 			{ position: relative; z-index: 999; }
+.header nav li 				{ position: relative; z-index: 999; }
 .header nav li ul 			{ position: absolute; display: none; z-index: 999; }
+.header nav li:hover ul		{ display: block; }
 .header nav li li 			{ display: block; clear: both; }
-.header nav li li a 		{ padding: .75em; width: 150px; height: auto; border-bottom: 1px solid #666; background: #333; color: #ccc; }
-.header nav li li a:hover 	{ background: #666; text-decoration: none; }
+.header nav li li a,
+.header nav li.active li a	{ padding: .75em; width: 150px; height: auto; border-bottom: 1px solid #666; background: #333; color: #ccc; text-decoration: none; }
+.header nav li li a:hover 	{ background: #666; }
 
 
 /* ===CONTENT START=== */
@@ -132,12 +144,11 @@ hr 	{ margin: 0 0 1.25em; padding: 0; height: 1px; display: block; border: 0; bo
 
 /* ===FOOTER START=== */
 
-.footer 						{ padding: 1.5em 0; background: #333; color: #fff; }
-.footer nav li 					{ float: left; }
-.footer nav a 					{ padding: 0 .75em; border-left: 1px solid #fff; }
-.footer nav li:first-child a 	{ padding-left: 0; border: none; }
-.footer p, footer ul 			{ margin-bottom: 1em; }
-.footer a 						{ color: #fff; }
+.footer 					{ padding: 1.5em 0; background: #333; color: #fff; }
+.footer nav li 				{ margin: 0 .75em; float: left; border-left: 1px solid #fff; }
+.footer nav li:first-child	{ margin-left: 0; border: none; }
+.footer p, footer ul 		{ margin-bottom: 1em; }
+.footer a 					{ color: #fff; }
 
 
 /* ===MEDIA QUERIES START=== */
@@ -153,7 +164,8 @@ hr 	{ margin: 0 0 1.25em; padding: 0; height: 1px; display: block; border: 0; bo
 
 @media only screen and (min-width: 768px) { 
   /* Style adjustments for viewports 768px and over go here */
-
+	ul.inline li				{ margin-left: 1em; float: left; }
+	ul.inline li:first-child	{ margin: 0; }
 }
 
 @media only print { 

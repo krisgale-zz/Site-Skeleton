@@ -14,8 +14,6 @@ require_once ('includes/header.php');
 		<h1>HTML Ipsum Presents</h1>
 		<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
 		
-		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-		
 		<h2>Header Level 2</h2>
 		<ol>
 			<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
@@ -26,8 +24,6 @@ require_once ('includes/header.php');
 				</ol>
 			</li>
 		</ol>
-		
-		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
 			
 		<img class="aligncenter" src="images/bear_dance.gif" alt="dancing bear" width="300" />
 		
@@ -35,8 +31,6 @@ require_once ('includes/header.php');
 		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 		
 		<img class="left" src="images/bear_dance.gif" alt="dancing bear" width="185" />
-		
-		<p>Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
 		
 		<p>Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
 		
@@ -59,14 +53,38 @@ require_once ('includes/header.php');
 		<p>Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
 		
 		<pre><code>
-		#header h1 a { 
-			display: block; 
-			width: 300px; 
-			height: 80px; 
-		}
+#header h1 a { 
+	display: block; 
+	width: 300px; 
+	height: 80px; 
+}
 		</code></pre>
 		
 		<p>Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+		
+		<dl>
+			<dt>Aliquam</dt>
+			<dd>Nam dui mi, tincidunt quis</dd>
+			<dt>Aliquam</dt>
+			<dd>Nam dui mi, tincidunt quis</dd>
+		</dl>
+		
+		<table>
+			<tr>
+				<th>Aliquam</th>
+				<th>Nam dui mi</th>
+			</tr>
+			<tr>
+				<td>Nam dui mi, tincidunt quis</td>
+				<td>Nam dui mi, tincidunt quis</td>
+			</tr>
+			<tr>
+				<td>Nam dui mi, tincidunt quis</td>
+				<td>Nam dui mi, tincidunt quis</td>
+			</tr>
+		</table>
+		
+		<p><a class="button">Button</a> <a class="button">Button</a></p>
 		
 	</section><!--/end .content-main-->
 	<?php require_once ('includes/sidebar.php'); ?>
