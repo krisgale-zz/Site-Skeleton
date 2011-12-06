@@ -71,7 +71,7 @@ ol ol 			{ font-size: 1em; }
 ol 				{ list-style-type: decimal; }
 ol ol 			{ list-style-type: lower-roman; }
 
-ul.inline		{ margin: 0; font-size: 1em; }
+ul.inline		{ margin: 0; padding: 0; border: none; background: none; font-size: 1em; }
 
 img 			{ max-width: 100%; display: block; }
 img.left,
