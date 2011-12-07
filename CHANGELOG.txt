@@ -1,4 +1,16 @@
 --------
+2.2
+--------
+Updated WordPress theme to use cite, and time HTML5 tags
+Updated WordPress comments, and comments form functions for new markup and HTML5 tags
+Removed Chrome Frame from footer
+Added functions to WordPress functions file for excerpt length and suffix
+Added content width to WordPress functions file
+Updated screenshot
+Removed references to O3 World
+Added License to theme
+
+--------
 2.1
 --------
 Grabbed the best of the best from 320 and up and HTML5 Boilerplate stylesheet

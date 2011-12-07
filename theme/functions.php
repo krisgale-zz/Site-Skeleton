@@ -1,16 +1,90 @@
 <?php
-/**
- * @package WordPress
- * @subpackage O3 World
- */
+/*
+	@package WordPress
+	@subpackage PeteSchuster
+*/
 
 add_theme_support('menus');
 add_theme_support('automatic-feed-links');
 add_theme_support('post-thumbnails');
 update_option('image_default_link_type','none');
+if ( ! isset( $content_width ) ) $content_width = 960;
+
+//Custom Comments List
+if ( ! function_exists( 'ps_comment' ) ) :
+
+function ps_comment( $comment, $args, $depth ) {
+	$GLOBALS['comment'] = $comment;
+	switch ( $comment->comment_type ) :
+		case 'pingback' :
+		case 'trackback' :
+	?>
+	<li class="post pingback">
+		<p>Pingback: <?php comment_author_link(); ?><?php edit_comment_link( 'Edit', '<span class="edit-link">', '</span>' ); ?></p>
+	<?php
+			break;
+		default :
+	?>
+	<li <?php comment_class('clearfix'); ?> id="li-comment-<?php comment_ID(); ?>">
+			<figure><?php echo get_avatar( $comment, 65 ); ?></figure>
+			<div>
+				<footer>
+					<h3><?php comment_author_link(); ?></h3>
+					<p>
+					<time datetime="<?php echo get_comment_time( 'c' ); ?>" pubdate="pubdate"><?php echo get_comment_time( 'M d, Y' ); ?></time>
+					<?php edit_comment_link( 'Edit', '<span class="edit-link">', '</span>' ); ?>
+	
+					<?php if ( $comment->comment_approved == '0' ) : ?>
+						<br />
+						<em>Your comment is awaiting moderation</em>
+					<?php endif; ?>
+					</p>
+				</footer>
+	
+				<?php comment_text(); ?>
+	
+				<p class="right">
+					<?php comment_reply_link( array_merge( $args, array( 'reply_text' => 'Reply', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+				</p><!-- .reply -->
+			</div>
+
+	<?php
+			break;
+	endswitch;
+}
+endif; // ends check for ps_comment()
+
+//Change the Excerpt Length
+function new_excerpt_length($length) {
+	return 30;
+}
+add_filter('excerpt_length', 'new_excerpt_length');
+
+//Remove the [..] from the excerpt
+function new_excerpt_more($more) {
+       global $post;
+	return '';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+/*
+//Sidebars
+function ps_widgets_init() {
+	//Register Another Sidebar for Widgets Like Twitter
+	register_sidebar(array(
+		'name' => 'Widgets Right',
+		'id' => 'ps_widgets',
+		'description' => 'Widgets in this area will be shown on the right-hand side.',
+		'before_widget' => '<li id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</li>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>'
+	));
+}
+add_action( 'widgets_init', 'ps_widgets_init' );
+
 
 //Register Sessions
-/*
 add_action('init', 'register_sesssion');
 function register_sesssion() 
 {

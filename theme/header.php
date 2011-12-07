@@ -1,4 +1,5 @@
 <!doctype html>
+<html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -23,7 +24,11 @@ wp_head();
 <body <?php body_class(); ?>> 
 <div id="container">
 <header class="header clearfix">
+	<?php if ( is_front_page() ) { ?>
+	<h1><a class="logo" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+	<?php } else { ?>
 	<a class="logo" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
+	<?php } ?>
 	<nav class="clearfix" role="navigation">
 		<?php wp_nav_menu(array('menu' => 'main', 'menu_class' => 'dropdown clearfix', 'container' => '')); ?>
 	</nav><!--/end nav-->
