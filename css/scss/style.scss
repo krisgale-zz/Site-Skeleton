@@ -121,8 +121,8 @@ hr 	{ margin: 0 0 1.25em; padding: 0; height: 1px; display: block; border: 0; bo
 	
 	nav { margin: 0 0 1.25em; clear: right; float: right;
 	
-		li 			{ float: left; display: block; }
-		a 			{ margin: 0 1em; padding: .75em 1em; text-decoration: none; display: block; }	
+		li 			{ display: block; }
+		a 			{ padding: .75em 1em; text-decoration: none; display: block; }	
 		a:hover,
 		li.active a { text-decoration: underline; }
 		
@@ -130,7 +130,7 @@ hr 	{ margin: 0 0 1.25em; padding: 0; height: 1px; display: block; border: 0; bo
 		li 				{ position: relative; z-index: 999; }
 		li ul 			{ position: absolute; display: none; z-index: 999; }
 		li:hover ul		{ display: block; }
-		li li 			{ display: block; clear: both; }
+		li li 			{ margin: 0; float: none; clear: both; }
 		li li a,
 		li.active li a	{ padding: .75em; width: 150px; height: auto; border-bottom: 1px solid $seconColor; background: $primColor; color: #ccc; text-decoration: none; }
 		li li a:hover 	{ background: $seconColor; }
@@ -151,8 +151,9 @@ hr 	{ margin: 0 0 1.25em; padding: 0; height: 1px; display: block; border: 0; bo
 
 /* ===FOOTER START=== */
 
-.footer { padding: 1.5em 0; background: $primColor; color: #fff;
-	nav li 				{ margin-left: .75em; padding-left: .75em; float: left; border-left: 1px solid #fff; }
+.footer { padding: 1.25em 0; background: $primColor; color: #fff;
+	nav ul				{ font-size: .75em; }
+	nav li 				{ margin-left: .75em; padding-left: .75em; border-left: 1px solid #fff; }
 	nav li:first-child	{ margin: 0; padding: 0; border: none; }
 	p, ul 				{ margin-bottom: 1em; }
 	a 					{ color: #fff; }

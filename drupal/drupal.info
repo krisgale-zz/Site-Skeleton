@@ -1,0 +1,17 @@
+Name: Drupal Boilerplate Theme
+Description: Boilerplate Theme for Drupal
+Core: 7.x
+
+; CSS
+css[all][] = css/style.css 
+; css[all][] = css/style.min.css
+
+; JS
+script[] = js/functionality.js
+; script[] = js/functionality.min.js
+
+; Regions
+region[header] = Header
+region[content] = Content
+region[sidebar] = Sidebar
+region[footer] = Footer

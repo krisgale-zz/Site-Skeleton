@@ -30,7 +30,7 @@
 	<header class="header clearfix">
 		<a class="logo" href="#">Site Name</a>
 		<nav>
-			<ul class="clearfix">
+			<ul class="clearfix inline">
 				<li><a href="#">Home</a></li>
 				<li><a href="#">About</a>
 					<ul>
