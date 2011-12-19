@@ -15,7 +15,7 @@ get_header(); ?>
 		endwhile;
 		
 		edit_post_link( 'Edit this entry.', '<p>', '</p>' );
-		
+		wp_link_pages(); 
 		?>
 	</section><!--/end .content-main-->
 	<?php get_sidebar(); ?>

@@ -67,7 +67,6 @@ function new_excerpt_more( $more ) {
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 
-/*
 //Sidebars
 function ps_widgets_init() {
 	//Register Another Sidebar for Widgets Like Twitter
@@ -83,7 +82,7 @@ function ps_widgets_init() {
 }
 add_action( 'widgets_init', 'ps_widgets_init' );
 
-
+/*
 //Register Session
 add_action( 'init', 'register_sesssion' );
 function register_sesssion() {

@@ -22,9 +22,9 @@
     </nav>
     <?php endif; // check for comment navigation ?>
 
-    <ol>
+    <ul>
         <?php wp_list_comments( array( 'callback' => 'ps_comment' ) ); ?>
-    </ol>
+    </ul>
 
     <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
     <nav class="clearfix">
@@ -45,10 +45,10 @@ $fields = array(
     'author' => '<label for="author">Name' .
                 ( $req ? '<span class="required">*</span>' : '' ) .
                 '</label><input id="author" name="author" type="text" value="' .
-                esc_attr( $commenter['comment_author'] ) . '" tabindex="1"' . $aria_req . ' />',
+                esc_attr( $commenter['comment_author'] ) . '" tabindex="1" />',
     'email'  => '<label for="email">Email' .
                 ( $req ? '<span class="required">*</span>' : '' ) .
-                '</label><input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" tabindex="2"' . $aria_req . ' />',
+                '</label><input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" tabindex="2" />',
     'url'    => '<label for="url">Website</label>' .
                 '<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" tabindex="3" />'
 );
@@ -59,10 +59,10 @@ $defaults = array(
     'comment_notes_after' => '',
     'id_form' => 'commentform',
     'id_submit' => 'submit',
-    'title_reply' => __( 'Leave a Comment' ),
-    'title_reply_to' => __( 'Leave a Comment to %s' ),
-    'cancel_reply_link' => __( 'Cancel reply' ),
-    'label_submit' => __( 'Post Comment' ),
+    'title_reply' => 'Leave a Comment',
+    'title_reply_to' => 'Leave a Comment to %s',
+    'cancel_reply_link' => 'Cancel reply',
+    'label_submit' => 'Post Comment'
 ); 
 comment_form( $defaults );
 ?>
