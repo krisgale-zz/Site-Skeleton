@@ -7,6 +7,9 @@ Credits:
 HTML5 Boilerplate - URL: http://h5bp.com/
 === */
 
+@import 'wordpress';
+@import 'drupal';
+
 $primColor: #333;
 $seconColor: #666;
 
@@ -15,12 +18,12 @@ $seconColor: #666;
 * { margin: 0; padding: 0; border: none; outline: none; }
 
 html	{ font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-body 	{ font-family: "Helvetica Neue", Helvetica, Arial; background: url('../images/ui/bg_page.png') repeat-x 0 0 #fff; color: $primColor; }
+body { font-family: 'Helvetica Neue', Helvetica, Arial; background: url('../images/ui/bg_page.png') repeat-x 0 0 #fff; color: $primColor; word-wrap: break-word; }
 
 
 /* ===GENERAL FIELDSETS=== */
 
-label 						{ font-size: .75em; line-height: 2em; display: block; cursor: pointer; }
+label 				{ font-size: .75em; line-height: 2em; display: block; cursor: pointer; }
 input[type=text],
 input[type=password],
 input[type=email],
@@ -28,11 +31,11 @@ input[type=search],
 input[type=tel],
 input[type=file],
 textarea,
-select 						{ margin-bottom: .75em; padding: .5em 1%; width:97%; border: 1px solid $seconColor; background-color: #fff; font-size: .75em; color: #000; }
-input[type=submit] 			{ padding: .5em 1em; background: $seconColor; border: none; color: #fff; cursor: pointer; -webkit-apperance: none; }
+select 				{ margin-bottom: .75em; padding: .5em 1%; width:97%; border: 1px solid $seconColor; background-color: #fff; font-size: .75em; color: #000; }
+input[type=submit] 		{ padding: .5em 1em; background: $seconColor; border: none; color: #fff; cursor: pointer; -webkit-apperance: none; }
 input[type=submit]:hover,
 input[type=submit]:focus	{ background: $primColor; }
-textarea 					{ width: 98%; height: 8em; font-family: Arial, Helvetica, sans-serif; overflow: auto; vertical-align: top; resize: vertical; }
+textarea 				{ width: 98%; height: 8em; font-family: Arial, Helvetica, sans-serif; overflow: auto; vertical-align: top; resize: vertical; }
 
 
 /* ===GENERAL ELEMENT STYLES=== */
@@ -44,7 +47,16 @@ h4 { margin-bottom : 1.25em; font-size : 1.25em; line-height : 1.25em; }
 h5 { margin-bottom : 1.5em; font-size : 1em; }
 h6 { font-size : 1em; }
 
-a 			{ text-decoration: underline; color: #999; }
+hgroup { margin-bottom: .688em;
+	h1,
+	h2,
+	h3,
+	h4
+	h5,
+	h6	{ margin: 0; }
+}
+
+a 		{ text-decoration: underline; color: #999; }
 a:hover,
 a:focus 	{ text-decoration: none; color: #ccc; }
 a:focus 	{ outline: thin dotted; }
@@ -55,38 +67,34 @@ a.button:focus		{ background: $seconColor; }
 a.button + a.button	{ margin-left: 1em; }
 p a.button,
 ul a.button,
-dl a.button			{ margin: 0; font-size: 1em; }
+dl a.button		{ margin: 0; font-size: 1em; }
 
 p,
 ul,
 ol,
-dl				{ margin-bottom: 1.666em; line-height: 1.5em; font-size: .75em; list-style-type: none; }
+dl,
+address			{ margin-bottom: 1.666em; line-height: 1.5em; font-size: .75em; list-style-type: none; }
 ul.circle,
 ul.circle li,
 ol,
 ol li,
 dd				{ margin-left: 1.666em; }
 ul.circle 		{ list-style-type: circle; }
-ul.circle ul 	{ list-style-type: disc; }
+ul.circle ul 		{ list-style-type: disc; }
 ul ul,
-ol ol 			{ font-size: 1em; }
+ol ol 			{ margin: 0; font-size: 1em; }
 ol 				{ list-style-type: decimal; }
 ol ol 			{ list-style-type: lower-roman; }
 
-ul.inline		{ margin: 0; padding: 0; border: none; background: none; font-size: 1em; }
+ul.inline			{ margin: 0; padding: 0; border: none; background: none; }
 
-img 			{ max-width: 100%; display: block; }
-img.left,
-.alignleft 		{ margin: 0 .75em .75em 0; float: left; clear: both; }
-img.right,
-.alignright 	{ margin: 0 0 .75em .75em; float: right; clear: both; }
-.aligncenter 	{ margin: 0 auto .75em auto; float: none; clear: both; display: block; }
+img 				{ max-width: 100%; height: auto; display: block; }
 
-figure 			{ margin-bottom : .375em; }
+figure 			{ margin-bottom : .625em; max-width: 100%!important; height: auto!important; }
 figure img,
 figure object,
-figure embed 	{ margin-bottom : .75em; max-width : 100%; }
-figcaption 		{ display : block; font-style : italic; }
+figure embed 	{ margin-bottom : .625em; max-width : 100%; height: auto; display: block; }
+figcaption,
 
 table 	{ margin-bottom: 1.125em; border-collapse: collapse; border-spacing: 0; border-top: 1px solid $seconColor; border-left: 1px solid $seconColor; }
 th		{ padding: 1em; font-size: .875em; color: #fff; background: $primColor; border-right: 1px solid $seconColor; border-bottom: 1px solid $seconColor; }
@@ -115,20 +123,20 @@ hr 	{ margin: 0 0 1.25em; padding: 0; height: 1px; display: block; border: 0; bo
 
 /* ===HEADER START=== */
 
-.header	{ margin: 1.25em 0 0;
-
+.header	{ margin: 1.25em 0;
+	
 	.logo	{ display: block; text-indent: -9999px; overflow: hidden; background: url('../images/ui/logo.png') 0 0 no-repeat; float: left; }
 	
 	nav { margin: 0 0 1.25em; clear: right; float: right;
-	
+		
 		li 			{ display: block; }
 		a 			{ padding: .75em 1em; text-decoration: none; display: block; }	
 		a:hover,
 		li.active a { text-decoration: underline; }
 		
 		/* for dropdowns */
-		li 				{ position: relative; z-index: 400; }
-		li ul 			{ position: absolute; display: none; z-index: 400; }
+		li 				{ position: relative; z-index: 999; }
+		li ul 			{ position: absolute; display: none; z-index: 999; }
 		li:hover ul		{ display: block; }
 		li li 			{ margin: 0; float: none; clear: both; }
 		li li a,
@@ -152,12 +160,15 @@ hr 	{ margin: 0 0 1.25em; padding: 0; height: 1px; display: block; border: 0; bo
 /* ===FOOTER START=== */
 
 .footer { padding: 1.25em 0; background: $primColor; color: #fff;
-	nav ul				{ font-size: .75em; }
-	nav li 				{ margin-left: .75em; padding-left: .75em; border-left: 1px solid #fff; }
+
+	nav ul			{ font-size: .75em; }
+	nav ul ul			{ display: none; }
+	nav li 			{ margin-left: .75em; padding-left: .75em; border-left: 1px solid #fff; }
 	nav li:first-child	{ margin: 0; padding: 0; border: none; }
-	p, ul 				{ margin-bottom: 1em; }
-	a 					{ color: #fff; }
-}
+	p, ul 			{ margin-bottom: 1em; }
+	a 				{ color: #fff; }
+	
+} /* end footer */
 
 /* ===MEDIA QUERIES START=== */
 

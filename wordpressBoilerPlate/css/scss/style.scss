@@ -7,6 +7,9 @@ Credits:
 HTML5 Boilerplate - URL: http://h5bp.com/
 === */
 
+@import 'wordpress';
+@import 'drupal';
+
 $primColor: #333;
 $seconColor: #666;
 
@@ -15,12 +18,12 @@ $seconColor: #666;
 * { margin: 0; padding: 0; border: none; outline: none; }
 
 html	{ font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-body 	{ font-family: "Helvetica Neue", Helvetica, Arial; background: url('../images/ui/bg_page.png') repeat-x 0 0 #fff; color: $primColor; word-wrap: break-word; }
+body { font-family: 'Helvetica Neue', Helvetica, Arial; background: url('../images/ui/bg_page.png') repeat-x 0 0 #fff; color: $primColor; word-wrap: break-word; }
 
 
 /* ===GENERAL FIELDSETS=== */
 
-label 						{ font-size: .75em; line-height: 2em; display: block; cursor: pointer; }
+label 				{ font-size: .75em; line-height: 2em; display: block; cursor: pointer; }
 input[type=text],
 input[type=password],
 input[type=email],
@@ -28,11 +31,11 @@ input[type=search],
 input[type=tel],
 input[type=file],
 textarea,
-select 						{ margin-bottom: .75em; padding: .5em 1%; width:97%; border: 1px solid $seconColor; background-color: #fff; font-size: .75em; color: #000; }
-input[type=submit] 			{ padding: .5em 1em; background: $seconColor; border: none; color: #fff; cursor: pointer; -webkit-apperance: none; }
+select 				{ margin-bottom: .75em; padding: .5em 1%; width:97%; border: 1px solid $seconColor; background-color: #fff; font-size: .75em; color: #000; }
+input[type=submit] 		{ padding: .5em 1em; background: $seconColor; border: none; color: #fff; cursor: pointer; -webkit-apperance: none; }
 input[type=submit]:hover,
 input[type=submit]:focus	{ background: $primColor; }
-textarea 					{ width: 98%; height: 8em; font-family: Arial, Helvetica, sans-serif; overflow: auto; vertical-align: top; resize: vertical; }
+textarea 				{ width: 98%; height: 8em; font-family: Arial, Helvetica, sans-serif; overflow: auto; vertical-align: top; resize: vertical; }
 
 
 /* ===GENERAL ELEMENT STYLES=== */
@@ -53,7 +56,7 @@ hgroup { margin-bottom: .688em;
 	h6	{ margin: 0; }
 }
 
-a 			{ text-decoration: underline; color: #999; }
+a 		{ text-decoration: underline; color: #999; }
 a:hover,
 a:focus 	{ text-decoration: none; color: #ccc; }
 a:focus 	{ outline: thin dotted; }
@@ -64,7 +67,7 @@ a.button:focus		{ background: $seconColor; }
 a.button + a.button	{ margin-left: 1em; }
 p a.button,
 ul a.button,
-dl a.button			{ margin: 0; font-size: 1em; }
+dl a.button		{ margin: 0; font-size: 1em; }
 
 p,
 ul,
@@ -77,35 +80,21 @@ ol,
 ol li,
 dd				{ margin-left: 1.666em; }
 ul.circle 		{ list-style-type: circle; }
-ul.circle ul 	{ list-style-type: disc; }
+ul.circle ul 		{ list-style-type: disc; }
 ul ul,
 ol ol 			{ margin: 0; font-size: 1em; }
 ol 				{ list-style-type: decimal; }
 ol ol 			{ list-style-type: lower-roman; }
 
-ul.inline		{ margin: 0; padding: 0; border: none; background: none; }
+ul.inline			{ margin: 0; padding: 0; border: none; background: none; }
 
 img 				{ max-width: 100%; height: auto; display: block; }
-.alignleft 			{ margin: 0 .625em .625em 0; float: left; clear: both; }
-.alignright 		{ margin: 0 0 .625em .625em; float: right; clear: both; }
-.aligncenter,
-.gallery-icon img	{ margin: 0 auto .625em auto; float: none; clear: both; display: block; }
-.alignnone			{ margin-bottom: .625em; }
 
-p .alignleft	{ margin: 0 .8333em .8333em 0; }
-p .alignright 	{ margin: 0 0 .8333em .8333em; }
-p .aligncenter	{ margin: 0 auto .8333em auto; }
-p .alignnone	{ margin-bottom: .8333em; }
-
-.wp-caption,
 figure 			{ margin-bottom : .625em; max-width: 100%!important; height: auto!important; }
 figure img,
 figure object,
-figure embed,
-.wp-caption img	{ margin-bottom : .625em; max-width : 100%; height: auto; display: block; }
+figure embed 	{ margin-bottom : .625em; max-width : 100%; height: auto; display: block; }
 figcaption,
-.wp-caption p	{ display : block; text-align: center; font-size: .688em; color: $seconColor; font-style: italic; }
-
 
 table 	{ margin-bottom: 1.125em; border-collapse: collapse; border-spacing: 0; border-top: 1px solid $seconColor; border-left: 1px solid $seconColor; }
 th		{ padding: 1em; font-size: .875em; color: #fff; background: $primColor; border-right: 1px solid $seconColor; border-bottom: 1px solid $seconColor; }
@@ -136,13 +125,6 @@ hr 	{ margin: 0 0 1.25em; padding: 0; height: 1px; display: block; border: 0; bo
 
 .header	{ margin: 1.25em 0;
 	
-	hgroup {
-	
-		h1	{ font-size: 2.5em; }
-		h2	{ font-size: 1em; }
-	
-	}
-	
 	.logo	{ display: block; text-indent: -9999px; overflow: hidden; background: url('../images/ui/logo.png') 0 0 no-repeat; float: left; }
 	
 	nav { margin: 0 0 1.25em; clear: right; float: right;
@@ -169,55 +151,22 @@ hr 	{ margin: 0 0 1.25em; padding: 0; height: 1px; display: block; border: 0; bo
 
 .content-main 	{ margin-bottom: 1.25em; }
 
-.post {
-
-	header h1	{ margin-bottom: .20833em; }
-	header h2	{ margin-bottom: .3125em; }
-	footer		{ margin-bottom: 1.25em; }
-	footer p	{ margin: 0; color: $seconColor; }
-
-}
-
-#comments {
-	
-	> ul							{ margin: 0; font-size: 1em; }
-	li.comment						{ margin-bottom: .625em; padding-bottom: .625em; clear: both; }
-	li.odd > figure 				{ margin-right: 1.25em; float: left; }
-	li.even > figure 				{ margin-left: 1.25em; float: right; }
-	li.comment > figure				{ width: 65px; }
-	li.comment > div > p			{ clear: both; }
-	li.comment > div ul				{ margin: 0 0 1.666em 1.666em; font-size: .75em; list-style-type: circle; }
-	li.comment > div ul ul			{ margin-bottom: 0; font-size: 1em; }
-	li.comment > div > footer		{ padding-top: .625em; }
-	li.comment > div > footer h3	{ margin-bottom: .41666em; }
-	
-}
-
-.entry	{ margin-bottom: 1.25em; padding-bottom: 1.25em; }
-
-.bypostauthor,
-.gallery-caption,
-.sticky				{ position: static; }
 
 /* ===SIDEBAR START=== */
 
-.sidebar { margin-bottom: 1.25em;
-	> ul		{ font-size: 1em; }
-	> ul ul		{ margin-bottom: 1.666em; font-size: .75em; }
-	> ul ul ul	{ margin: 0; font-size: 1em; }
-}
+.sidebar { margin-bottom: 1.25em; }
 
 
 /* ===FOOTER START=== */
 
 .footer { padding: 1.25em 0; background: $primColor; color: #fff;
 
-	nav ul				{ font-size: .75em; }
+	nav ul			{ font-size: .75em; }
 	nav ul ul			{ display: none; }
-	nav li 				{ margin-left: .75em; padding-left: .75em; border-left: 1px solid #fff; }
+	nav li 			{ margin-left: .75em; padding-left: .75em; border-left: 1px solid #fff; }
 	nav li:first-child	{ margin: 0; padding: 0; border: none; }
-	p, ul 				{ margin-bottom: 1em; }
-	a 					{ color: #fff; }
+	p, ul 			{ margin-bottom: 1em; }
+	a 				{ color: #fff; }
 	
 } /* end footer */
 
