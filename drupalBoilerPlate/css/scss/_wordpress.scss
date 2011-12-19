@@ -26,7 +26,7 @@ p .alignnone	{ margin-bottom: .8333em; }
 		h2	{ font-size: 1em; }
 	
 	}
-	
+}
 /* ===CONTENT START=== */
 
 .post {
@@ -40,15 +40,15 @@ p .alignnone	{ margin-bottom: .8333em; }
 
 #comments {
 	
-	> ul							{ margin: 0; font-size: 1em; }
-	li.comment						{ margin-bottom: .625em; padding-bottom: .625em; clear: both; }
-	li.odd > figure 				{ margin-right: 1.25em; float: left; }
-	li.even > figure 				{ margin-left: 1.25em; float: right; }
-	li.comment > figure				{ width: 65px; }
-	li.comment > div > p			{ clear: both; }
-	li.comment > div ul				{ margin: 0 0 1.666em 1.666em; font-size: .75em; list-style-type: circle; }
-	li.comment > div ul ul			{ margin-bottom: 0; font-size: 1em; }
-	li.comment > div > footer		{ padding-top: .625em; }
+	> ul						{ margin: 0; font-size: 1em; }
+	li.comment				{ margin-bottom: .625em; padding-bottom: .625em; clear: both; }
+	li.odd > figure 			{ margin-right: 1.25em; float: left; }
+	li.even > figure 			{ margin-left: 1.25em; float: right; }
+	li.comment > figure			{ width: 65px; }
+	li.comment > div > p		{ clear: both; }
+	li.comment > div ul			{ margin: 0 0 1.666em 1.666em; font-size: .75em; list-style-type: circle; }
+	li.comment > div ul ul		{ margin-bottom: 0; font-size: 1em; }
+	li.comment > div > footer	{ padding-top: .625em; }
 	li.comment > div > footer h3	{ margin-bottom: .41666em; }
 	
 }
@@ -57,12 +57,12 @@ p .alignnone	{ margin-bottom: .8333em; }
 
 .bypostauthor,
 .gallery-caption,
-.sticky				{ position: static; }
+.sticky			{ position: static; }
 
 /* ===SIDEBAR START=== */
 
 .sidebar { margin-bottom: 1.25em;
-	> ul		{ font-size: 1em; }
+	> ul			{ font-size: 1em; }
 	> ul ul		{ margin-bottom: 1.666em; font-size: .75em; }
 	> ul ul ul	{ margin: 0; font-size: 1em; }
 }
