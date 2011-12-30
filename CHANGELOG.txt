@@ -1,4 +1,12 @@
 --------
+3.0
+--------
+Official Site Skeleton Launch
+Added Sass support
+Added Drupal Boilerplate
+Reconfigured WordPress theme for Unit tests, theme check and better markup.
+
+--------
 2.2
 --------
 Updated WordPress theme to use cite, and time HTML5 tags
@@ -7,7 +15,6 @@ Removed Chrome Frame from footer
 Added functions to WordPress functions file for excerpt length and suffix
 Added content width to WordPress functions file
 Updated screenshot
-Removed references to O3 World
 Added License to theme
 
 --------

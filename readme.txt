@@ -15,4 +15,5 @@ I typically start a WordPress build locally outside of the theme. Then once I ge
 
 ==AUTHOR==
 
+Pete Schuster
 http://peteschuster.com/
