@@ -7,11 +7,12 @@ Credits:
 HTML5 Boilerplate - URL: http://h5bp.com/
 === */
 
-@import 'wordpress';
-@import 'drupal';
-
 $primColor: #333;
 $seconColor: #666;
+
+@import	'mixins';
+@import 'wordpress';
+@import 'drupal';
 
 /* ===RESETS=== */
 

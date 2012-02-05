@@ -6,13 +6,13 @@
 
 <title><?php wp_title( '&laquo;', true, 'right' ); ?> <?php bloginfo( 'name' ); ?></title>
 
-<link rel="shortcut icon" href="<?php get_template_directory_uri(); ?>/images/ui/favicon.ico">
+<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/ui/favicon.ico">
 <?php 
 wp_enqueue_style( 'styleDev', get_template_directory_uri().'/css/style.css', '', '1.0' );
 //wp_enqueue_style( 'style', get_template_directory_uri().'/css/style.min.css', '', '1.0' ); 
 ?>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<!--[if IE]><link rel="stylesheet" href="<?php get_template_directory_uri(); ?>/css/ie.css" /><![endif]-->
+<!--[if IE]><link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/ie.css" /><![endif]-->
 
 <?php 
 wp_enqueue_script( 'modernizr', get_template_directory_uri().'/js/modernizr-2.0.6.min.js' );

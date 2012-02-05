@@ -1,337 +1,72 @@
-/* ===
-Site Skeleton Boiler Plate
-Pete Schuster http://peteschuster.com
-Version: 2
-Credits:
-320 and Up - URL: http://stuffandnonsense.co.uk/projects/320andup/
-HTML5 Boilerplate - URL: http://h5bp.com/
-=== */
-/* ===RESETS=== */
-/* line 15, scss/style.scss */
-* { margin: 0; padding: 0; border: none; outline: none; }
-
-/* line 17, scss/style.scss */
-html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-
-/* line 18, scss/style.scss */
-body { font-family: "Helvetica Neue", Helvetica, Arial; background: url("../images/ui/bg_page.png") repeat-x 0 0 white; color: #333333; word-wrap: break-word; }
-
-/* ===GENERAL FIELDSETS=== */
-/* line 23, scss/style.scss */
-label { font-size: .75em; line-height: 2em; display: block; cursor: pointer; }
-
-/* line 31, scss/style.scss */
-input[type=text], input[type=password], input[type=email], input[type=search], input[type=tel], input[type=file], textarea, select { margin-bottom: .75em; padding: .5em 1%; width: 97%; border: 1px solid #666666; background-color: #fff; font-size: .75em; color: #000; }
-
-/* line 32, scss/style.scss */
-input[type=submit] { padding: .5em 1em; background: #666666; border: none; color: #fff; cursor: pointer; -webkit-apperance: none; }
-
-/* line 34, scss/style.scss */
-input[type=submit]:hover, input[type=submit]:focus { background: #333333; }
-
-/* line 35, scss/style.scss */
-textarea { width: 98%; height: 8em; font-family: Arial, Helvetica, sans-serif; overflow: auto; vertical-align: top; resize: vertical; }
-
-/* ===GENERAL ELEMENT STYLES=== */
-/* line 40, scss/style.scss */
-h1 { margin-bottom: .75em; font-size: 3em; line-height: 1.2em; }
-
-/* line 41, scss/style.scss */
-h2 { margin-bottom: .75em; font-size: 2em; line-height: 1.2em; }
-
-/* line 42, scss/style.scss */
-h3 { margin-bottom: 1em; font-size: 1.5em; line-height: 1.3em; }
-
-/* line 43, scss/style.scss */
-h4 { margin-bottom: 1.25em; font-size: 1.25em; line-height: 1.25em; }
-
-/* line 44, scss/style.scss */
-h5 { margin-bottom: 1.5em; font-size: 1em; }
-
-/* line 45, scss/style.scss */
-h6 { font-size: 1em; }
-
-/* line 47, scss/style.scss */
-hgroup { margin-bottom: .688em; }
-/* line 53, scss/style.scss */
-hgroup h1, hgroup h2, hgroup h3, hgroup h4 h5, hgroup h6 { margin: 0; }
-
-/* line 56, scss/style.scss */
-a { text-decoration: underline; color: #999; }
-
-/* line 58, scss/style.scss */
-a:hover, a:focus { text-decoration: none; color: #ccc; }
-
-/* line 59, scss/style.scss */
-a:focus { outline: thin dotted; }
-
-/* line 61, scss/style.scss */
-a.button { margin-bottom: 1.125em; padding: .5em 1em; display: inline-block; font-size: .75em; background: #333333; color: #fff; text-decoration: none; border-radius: 5px; cursor: pointer; }
-
-/* line 63, scss/style.scss */
-a.button:hover, a.button:focus { background: #666666; }
-
-/* line 64, scss/style.scss */
-a.button + a.button { margin-left: 1em; }
-
-/* line 67, scss/style.scss */
-p a.button, ul a.button, dl a.button { margin: 0; font-size: 1em; }
-
-/* line 73, scss/style.scss */
-p, ul, ol, dl, address { margin-bottom: 1.666em; line-height: 1.5em; font-size: .75em; list-style-type: none; }
-
-/* line 78, scss/style.scss */
-ul.circle, ul.circle li, ol, ol li, dd { margin-left: 1.666em; }
-
-/* line 79, scss/style.scss */
-ul.circle { list-style-type: circle; }
-
-/* line 80, scss/style.scss */
-ul.circle ul { list-style-type: disc; }
-
-/* line 82, scss/style.scss */
-ul ul, ol ol { margin: 0; font-size: 1em; }
-
-/* line 83, scss/style.scss */
-ol { list-style-type: decimal; }
-
-/* line 84, scss/style.scss */
-ol ol { list-style-type: lower-roman; }
-
-/* line 86, scss/style.scss */
-ul.inline { margin: 0; padding: 0; border: none; background: none; }
-
-/* line 88, scss/style.scss */
-img { max-width: 100%; height: auto; display: block; }
-
-/* line 89, scss/style.scss */
-.alignleft { margin: 0 .625em .625em 0; float: left; clear: both; }
-
-/* line 90, scss/style.scss */
-.alignright { margin: 0 0 .625em .625em; float: right; clear: both; }
-
-/* line 92, scss/style.scss */
-.aligncenter, .gallery-icon img { margin: 0 auto .625em auto; float: none; clear: both; display: block; }
-
-/* line 93, scss/style.scss */
-.alignnone { margin-bottom: .625em; }
-
-/* line 95, scss/style.scss */
-p .alignleft { margin: 0 .8333em .8333em 0; }
-
-/* line 96, scss/style.scss */
-p .alignright { margin: 0 0 .8333em .8333em; }
-
-/* line 97, scss/style.scss */
-p .aligncenter { margin: 0 auto .8333em auto; }
-
-/* line 98, scss/style.scss */
-p .alignnone { margin-bottom: .8333em; }
-
-/* line 101, scss/style.scss */
-.wp-caption, figure { margin-bottom: .625em; max-width: 100%!important; height: auto!important; }
-
-/* line 105, scss/style.scss */
-figure img, figure object, figure embed, .wp-caption img { margin-bottom: .625em; max-width: 100%; height: auto; display: block; }
-
-/* line 107, scss/style.scss */
-figcaption, .wp-caption p { display: block; text-align: center; font-size: .688em; color: #666666; font-style: italic; }
-
-/* line 110, scss/style.scss */
-table { margin-bottom: 1.125em; border-collapse: collapse; border-spacing: 0; border-top: 1px solid #666666; border-left: 1px solid #666666; }
-
-/* line 111, scss/style.scss */
-th { padding: 1em; font-size: .875em; color: #fff; background: #333333; border-right: 1px solid #666666; border-bottom: 1px solid #666666; }
-
-/* line 112, scss/style.scss */
-td { padding: 1em; font-size: .75em; vertical-align: top; border-right: 1px solid #666666; border-bottom: 1px solid #666666; }
-
-/* line 117, scss/style.scss */
-pre, code, kbd, samp { font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
-
-/* line 118, scss/style.scss */
-pre { margin: 0 1.25em 1.25em; padding: 1.25em; white-space: pre; white-space: pre-wrap; word-wrap: break-word; background: #333333; color: #fff; }
-
-/* line 119, scss/style.scss */
-small { font-size: 85%; }
-
-/* line 121, scss/style.scss */
-sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
-
-/* line 122, scss/style.scss */
-sup { top: -0.5em; }
-
-/* line 123, scss/style.scss */
-sub { bottom: -0.25em; }
-
-/* line 124, scss/style.scss */
-blockquote { margin: 0 1.125em 1.125em; padding: 1.125em 1.125em .5em; display: block; background: #eee; font-style: italic; overflow: hidden; }
-
-/* line 126, scss/style.scss */
-hr { margin: 0 0 1.25em; padding: 0; height: 1px; display: block; border: 0; border-top: 1px solid #ccc; clear: both; }
-
-/* ===BEGIN STRUCTURE AND CUSTOM ELEMENTS=== */
-/* line 132, scss/style.scss */
-#container, .wrapper { margin: 0 .75em; padding: 0 1em; }
-
-/* ===HEADER START=== */
-/* line 137, scss/style.scss */
-.header { margin: 1.25em 0; /* end .header nav */ }
-/* line 141, scss/style.scss */
-.header hgroup h1 { font-size: 2.5em; }
-/* line 142, scss/style.scss */
-.header hgroup h2 { font-size: 1em; }
-/* line 146, scss/style.scss */
-.header .logo { display: block; text-indent: -9999px; overflow: hidden; background: url("../images/ui/logo.png") 0 0 no-repeat; float: left; }
-/* line 148, scss/style.scss */
-.header nav { margin: 0 0 1.25em; clear: right; float: right; /* for dropdowns */ }
-/* line 150, scss/style.scss */
-.header nav li { display: block; }
-/* line 151, scss/style.scss */
-.header nav a { padding: .75em 1em; text-decoration: none; display: block; }
-/* line 153, scss/style.scss */
-.header nav a:hover, .header nav li.active a { text-decoration: underline; }
-/* line 156, scss/style.scss */
-.header nav li { position: relative; z-index: 999; }
-/* line 157, scss/style.scss */
-.header nav li ul { position: absolute; display: none; z-index: 999; }
-/* line 158, scss/style.scss */
-.header nav li:hover ul { display: block; }
-/* line 159, scss/style.scss */
-.header nav li li { margin: 0; float: none; clear: both; }
-/* line 161, scss/style.scss */
-.header nav li li a, .header nav li.active li a { padding: .75em; width: 150px; height: auto; border-bottom: 1px solid #666666; background: #333333; color: #ccc; text-decoration: none; }
-/* line 162, scss/style.scss */
-.header nav li li a:hover { background: #666666; }
-
-/* end .header */
-/* ===CONTENT START=== */
-/* line 170, scss/style.scss */
-.content-main { margin-bottom: 1.25em; }
-
-/* line 174, scss/style.scss */
-.post header h1 { margin-bottom: .20833em; }
-/* line 175, scss/style.scss */
-.post header h2 { margin-bottom: .3125em; }
-/* line 176, scss/style.scss */
-.post footer { margin-bottom: 1.25em; }
-/* line 177, scss/style.scss */
-.post footer p { margin: 0; color: #666666; }
-
-/* line 183, scss/style.scss */
-#comments > ul { margin: 0; font-size: 1em; }
-/* line 184, scss/style.scss */
-#comments li.comment { margin-bottom: .625em; padding-bottom: .625em; clear: both; }
-/* line 185, scss/style.scss */
-#comments li.odd > figure { margin-right: 1.25em; float: left; }
-/* line 186, scss/style.scss */
-#comments li.even > figure { margin-left: 1.25em; float: right; }
-/* line 187, scss/style.scss */
-#comments li.comment > figure { width: 65px; }
-/* line 188, scss/style.scss */
-#comments li.comment > div > p { clear: both; }
-/* line 189, scss/style.scss */
-#comments li.comment > div ul { margin: 0 0 1.666em 1.666em; font-size: .75em; list-style-type: circle; }
-/* line 190, scss/style.scss */
-#comments li.comment > div ul ul { margin-bottom: 0; font-size: 1em; }
-/* line 191, scss/style.scss */
-#comments li.comment > div > footer { padding-top: .625em; }
-/* line 192, scss/style.scss */
-#comments li.comment > div > footer h3 { margin-bottom: .41666em; }
-
-/* line 196, scss/style.scss */
-.entry { margin-bottom: 1.25em; padding-bottom: 1.25em; }
-
-/* line 200, scss/style.scss */
-.bypostauthor, .gallery-caption, .sticky { position: static; }
-
-/* ===SIDEBAR START=== */
-/* line 204, scss/style.scss */
-.sidebar { margin-bottom: 1.25em; }
-/* line 205, scss/style.scss */
-.sidebar > ul { font-size: 1em; }
-/* line 206, scss/style.scss */
-.sidebar > ul ul { margin-bottom: 1.666em; font-size: .75em; }
-/* line 207, scss/style.scss */
-.sidebar > ul ul ul { margin: 0; font-size: 1em; }
-
-/* ===FOOTER START=== */
-/* line 213, scss/style.scss */
-.footer { padding: 1.25em 0; background: #333333; color: #fff; }
-/* line 215, scss/style.scss */
-.footer nav ul { font-size: .75em; }
-/* line 216, scss/style.scss */
-.footer nav ul ul { display: none; }
-/* line 217, scss/style.scss */
-.footer nav li { margin-left: .75em; padding-left: .75em; border-left: 1px solid #fff; }
-/* line 218, scss/style.scss */
-.footer nav li:first-child { margin: 0; padding: 0; border: none; }
-/* line 219, scss/style.scss */
-.footer p, .footer ul { margin-bottom: 1em; }
-/* line 220, scss/style.scss */
-.footer a { color: #fff; }
-
-/* end footer */
-/* ===MEDIA QUERIES START=== */
-@media only screen and (min-width: 480px) { /* Style adjustments for viewports 480px and over go here */
-  /* line 228, scss/style.scss */
-  #container { margin: 0 0 0 10%; width: 80%; }
-  /* 960 / 1200px */
-  /* line 229, scss/style.scss */
-  .wrapper { margin: 0 0 0 10%; width: 80%; }
-  /* line 231, scss/style.scss */
-  .content-main { width: 74.375%; float: left; }
-  /* line 232, scss/style.scss */
-  .sidebar { width: 23.125%; float: right; } }
-@media only screen and (min-width: 768px) { /* Style adjustments for viewports 768px and over go here */
-  /* line 237, scss/style.scss */
-  ul.inline li { margin-left: 1em; float: left; }
-  /* line 238, scss/style.scss */
-  ul.inline li:first-child { margin: 0; } }
-@media only print { /* line 242, scss/style.scss */
-  * { background: transparent !important; color: black !important; text-shadow: none !important; filter: none !important; -ms-filter: none !important; }
-  /* line 243, scss/style.scss */
-  .header, .footer, .sidebar, img, form { display: none !important; }
-  /* line 244, scss/style.scss */
-  #container, .content, .content-main { width: 100%; padding: 0; margin: 0; }
-  /* line 245, scss/style.scss */
-  a { text-decoration: underline; }
-  /* line 246, scss/style.scss */
-  pre, blockquote, tr, h2, h3 { page-break-inside: avoid; }
-  /* line 247, scss/style.scss */
-  p, h2, h3 { orphans: 3; widows: 3; } }
-/* ===NON-SEMANTIC HELPER CLASES=== */
-/* line 252, scss/style.scss */
-.right { float: right; }
-
-/* line 253, scss/style.scss */
-.left { float: left; }
-
-/* line 254, scss/style.scss */
-.clear { clear: both; }
-
-/* line 255, scss/style.scss */
-.hide { display: none; }
-
-/* ===CLEAR FIX=== */
-/* line 259, scss/style.scss */
-.clearfix:after { height: 0; content: "."; display: block; clear: both; visibility: hidden; }
-
-/* line 260, scss/style.scss */
-.clearfix { display: inline-block; zoom: 1; }
-
-/* line 261, scss/style.scss */
-.clearfix { display: block; }
-
-/* ===HTML5 RESETS=== */
-/* line 265, scss/style.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
-
-/* line 266, scss/style.scss */
-audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
-
-/* line 267, scss/style.scss */
-audio:not([controls]) { display: none; }
-
-/* line 268, scss/style.scss */
-[hidden] { display: none; }
+/*
+Syntax error: Undefined variable: "$seconColor".
+        on line 17 of /Users/pete/Code/SiteSkeleton/Site-Skeleton/css/scss/_wordpress.scss
+        from line 10 of /Users/pete/Code/SiteSkeleton/Site-Skeleton/css/scss/style.scss
+
+Backtrace:
+/Users/pete/Code/SiteSkeleton/Site-Skeleton/css/scss/_wordpress.scss:17
+/Users/pete/Code/SiteSkeleton/Site-Skeleton/css/scss/style.scss:10
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/script/variable.rb:50:in `_perform'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/script/node.rb:40:in `perform'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:215:in `visit_prop'
+org/jruby/RubyKernel.java:2096:in `send'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2336:in `collect'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:27:in `visit_children'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:235:in `visit_rule'
+org/jruby/RubyKernel.java:2096:in `send'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:145:in `visit_import'
+org/jruby/RubyArray.java:2336:in `collect'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:145:in `visit_import'
+org/jruby/RubyKernel.java:2096:in `send'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2336:in `collect'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:27:in `visit_children'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
+org/jruby/RubyKernel.java:2096:in `send'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:18:in `visit'
+org/jruby/RubyKernel.java:2096:in `send'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/tree/root_node.rb:20:in `render'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/engine.rb:293:in `_render'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/engine.rb:241:in `render'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/util.rb:297:in `silence_sass_warnings'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/sass-3.1.7/lib/sass/engine.rb:241:in `render'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/lib/compass/compiler.rb:136:in `compile'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/lib/compass/compiler.rb:122:in `timed'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/lib/compass/compiler.rb:135:in `compile'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/lib/compass/logger.rb:45:in `red'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/lib/compass/compiler.rb:134:in `compile'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/lib/compass/compiler.rb:114:in `compile_if_required'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/lib/compass/compiler.rb:99:in `run'
+org/jruby/RubyArray.java:1603:in `each'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/lib/compass/compiler.rb:97:in `run'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/lib/compass/compiler.rb:122:in `timed'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/lib/compass/compiler.rb:96:in `run'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/lib/compass/commands/watch_project.rb:142:in `recompile'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/lib/compass/commands/watch_project.rb:68:in `perform'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/lib/compass/commands/base.rb:18:in `execute'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/lib/compass/commands/project_base.rb:19:in `execute'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Applications/Scout.app/Contents/Resources/vendor/gems/gems/compass-0.11.5/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Applications/Scout.app/Contents/Resources/bin/compass:12:in `(root)'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined variable: \"$seconColor\".\A         on line 17 of /Users/pete/Code/SiteSkeleton/Site-Skeleton/css/scss/_wordpress.scss\A         from line 10 of /Users/pete/Code/SiteSkeleton/Site-Skeleton/css/scss/style.scss"; }

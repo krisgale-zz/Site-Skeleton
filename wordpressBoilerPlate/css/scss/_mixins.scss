@@ -1,0 +1,7 @@
+/* ===Mixins=== */
+
+@mixin gradient( $start, $end ){
+
+	background: $start;
+
+}

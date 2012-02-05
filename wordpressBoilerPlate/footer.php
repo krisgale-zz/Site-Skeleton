@@ -3,7 +3,7 @@
 	<nav>
 	<?php wp_nav_menu(array('menu' => 'footer', 'menu_class' => 'inline clearfix', 'container' => '')); ?>  
 	</nav>
-</div><!--/end footer-->
+</div></footer><!--/end footer-->
 
 <?php wp_footer(); ?>
 </body>

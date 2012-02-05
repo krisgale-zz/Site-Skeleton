@@ -1,0 +1,13 @@
+/* ===Mixins=== */
+
+@mixin gradient( $start, $end ){
+
+	background: $start;
+
+}
+
+@mixin transition( $property, $time, $ease ){
+	
+	-webkit-trainsition: $property $time $ease;
+
+}
