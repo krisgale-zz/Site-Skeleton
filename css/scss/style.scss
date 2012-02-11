@@ -7,8 +7,8 @@ Credits:
 HTML5 Boilerplate - URL: http://h5bp.com/
 === */
 
-$primColor: #333;
-$seconColor: #666;
+$primaryColor: #333;
+$secondaryColor: #666;
 
 @import	'mixins';
 @import 'wordpress';
@@ -16,15 +16,15 @@ $seconColor: #666;
 
 /* ===RESETS=== */
 
-* { margin: 0; padding: 0; border: none; outline: none; }
+* 	{ margin: 0; padding: 0; border: none; outline: none; }
 
 html	{ font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-body { font-family: 'Helvetica Neue', Helvetica, Arial; background: url('../images/ui/bg_page.png') repeat-x 0 0 #fff; color: $primColor; word-wrap: break-word; }
+body 	{ font-family: 'Helvetica Neue', Helvetica, Arial; background: url('../images/ui/bg_page.png') repeat-x 0 0 #fff; color: $primaryColor; word-wrap: break-word; }
 
 
 /* ===GENERAL FIELDSETS=== */
 
-label 				{ font-size: .75em; line-height: 2em; display: block; cursor: pointer; }
+label 						{ font-size: .75em; line-height: 2em; display: block; cursor: pointer; }
 input[type=text],
 input[type=password],
 input[type=email],
@@ -32,23 +32,23 @@ input[type=search],
 input[type=tel],
 input[type=file],
 textarea,
-select 				{ margin-bottom: .75em; padding: .5em 1%; width:97%; border: 1px solid $seconColor; background-color: #fff; font-size: .75em; color: #000; }
-input[type=submit] 		{ padding: .5em 1em; background: $seconColor; border: none; color: #fff; cursor: pointer; -webkit-apperance: none; }
+select 						{ margin-bottom: .75em; padding: .5em 1%; width: 97%; border: 1px solid $secondaryColor; background-color: #fff; font-size: .75em; color: #000; }
+input[type=submit] 			{ padding: .5em 1em; background: $secondaryColor; border: none; color: #fff; cursor: pointer; -webkit-apperance: none; }
 input[type=submit]:hover,
-input[type=submit]:focus	{ background: $primColor; }
-textarea 				{ width: 98%; height: 8em; font-family: Arial, Helvetica, sans-serif; overflow: auto; vertical-align: top; resize: vertical; }
+input[type=submit]:focus	{ background: $primaryColor; }
+textarea 					{ width: 98%; height: 8em; font-family: Arial, Helvetica, sans-serif; overflow: auto; vertical-align: top; resize: vertical; }
 
 
 /* ===GENERAL ELEMENT STYLES=== */
 
-h1 { margin-bottom : .75em; font-size : 3em; line-height : 1.2em; }
-h2 { margin-bottom : .75em; font-size : 2em; line-height : 1.2em; }
-h3 { margin-bottom : 1em; font-size : 1.5em; line-height : 1.3em; }
-h4 { margin-bottom : 1.25em; font-size : 1.25em; line-height : 1.25em; }
-h5 { margin-bottom : 1.5em; font-size : 1em; }
-h6 { font-size : 1em; }
+h1 { margin-bottom: 20 / 36 * 1em; font-size: 2.25em; line-height: 48 / 36 * 1em; }
+h2 { margin: 20 / 16 * 1em 0 10 / 16 * 1em; font-size: 24 / 16 * 1em; line-height: 32 / 24 * 1em; }
+h3 { margin: 10 / 18 * 1em 0; font-size: 18 / 16 * 1em; line-height: 24 / 16 * 1em; }
+h4 { margin-bottom: 10 / 14 * 1em; font-size: 14 / 16 * 1em; line-height : 16 / 14 * 1em; }
+h5 { margin-bottom: 10 / 12 * 1em; font-size: .75em; }
+h6 { margin-bottom: 1em; font-size: 10 / 16 * 1em; text-transform: uppercase; font-weight: normal; }
 
-hgroup { margin-bottom: .688em;
+hgroup { margin-bottom: 20 / 16 * 1em;
 	h1,
 	h2,
 	h3,
@@ -57,61 +57,60 @@ hgroup { margin-bottom: .688em;
 	h6	{ margin: 0; }
 }
 
-a 		{ text-decoration: underline; color: #999; }
+a 			{ text-decoration: underline; color: #999; }
 a:hover,
 a:focus 	{ text-decoration: none; color: #ccc; }
 a:focus 	{ outline: thin dotted; }
 
-a.button			{ margin-bottom: 1.125em; padding: .5em 1em; display: inline-block; font-size: .75em; background: $primColor; color: #fff; text-decoration: none; border-radius: 5px; cursor: pointer; }
+a.button			{ margin-bottom: 1.125em; padding: .5em 1em; display: inline-block; font-size: .75em; background: $primaryColor; color: #fff; text-decoration: none; border-radius: 5px; cursor: pointer; }
 a.button:hover,
-a.button:focus		{ background: $seconColor; }
+a.button:focus		{ background: $secondaryColor; }
 a.button + a.button	{ margin-left: 1em; }
 p a.button,
 ul a.button,
-dl a.button		{ margin: 0; font-size: 1em; }
+dl a.button			{ margin: 0; font-size: 1em; }
 
 p,
 ul,
 ol,
 dl,
-address			{ margin-bottom: 1.666em; line-height: 1.5em; font-size: .75em; list-style-type: none; }
-ul.circle,
-ul.circle li,
+address	{ margin-bottom: 20 / 12 * 1em; line-height: 18 / 12 * 1em; font-size: .75em; }
+ul,
+ul li,
 ol,
 ol li,
-dd				{ margin-left: 1.666em; }
-ul.circle 		{ list-style-type: circle; }
-ul.circle ul 		{ list-style-type: disc; }
+dd		{ margin-left: 20 / 12 * 1em; }
 ul ul,
-ol ol 			{ margin: 0; font-size: 1em; }
-ol 				{ list-style-type: decimal; }
-ol ol 			{ list-style-type: lower-roman; }
+ol ol 	{ margin: 0; font-size: 1em; }
 
-ul.inline			{ margin: 0; padding: 0; border: none; background: none; }
+ul.inline			{ margin: 0; padding: 0; border: none; background: none; list-style: none; }
+ul.inline > li > ul	{ margin-bottom: 1.666em; }
 
-img 				{ max-width: 100%; height: auto; display: block; }
+img 	{ max-width: 100%; height: auto; display: block; }
 
 figure 			{ margin-bottom : .625em; max-width: 100%!important; height: auto!important; }
 figure img,
 figure object,
-figure embed 	{ margin-bottom : .625em; max-width : 100%; height: auto; display: block; }
-figcaption,
+figure embed,	
+figcaption		{ margin-bottom : .625em; max-width : 100%; height: auto; display: block; }
+figcaption p	{ display : block; text-align: center; font-size: .688em; color: $secondaryColor; font-style: italic; }
 
-table 	{ margin-bottom: 1.125em; border-collapse: collapse; border-spacing: 0; border-top: 1px solid $seconColor; border-left: 1px solid $seconColor; }
-th		{ padding: 1em; font-size: .875em; color: #fff; background: $primColor; border-right: 1px solid $seconColor; border-bottom: 1px solid $seconColor; }
-td 		{ padding: 1em; font-size: .75em; vertical-align: top; border-right: 1px solid $seconColor; border-bottom: 1px solid $seconColor; }
+table 	{ margin-bottom: 1.125em; border-collapse: collapse; border-spacing: 0; border-top: 1px solid $secondaryColor; border-left: 1px solid $secondaryColor; }
+th		{ padding: 1em; font-size: .875em; color: #fff; background: $primaryColor; border-right: 1px solid $secondaryColor; border-bottom: 1px solid $secondaryColor; }
+td 		{ padding: 1em; font-size: .75em; vertical-align: top; border-right: 1px solid $secondaryColor; border-bottom: 1px solid $secondaryColor; }
 
 pre,
 code,
 kbd,
-samp 		{ font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
-pre 		{ margin: 0 1.25em 1.25em; padding: 1.25em; white-space: pre; white-space: pre-wrap; word-wrap: break-word; background: $primColor; color: #fff; }
-small 		{ font-size: 85%; }
+samp 			{ font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 1em; }
+pre 			{ margin: 0 1.25em 1.25em; padding: 1.25em; white-space: pre; white-space: pre-wrap; word-wrap: break-word; background: $primaryColor; color: #fff; }
+small 			{ font-size: 85%; }
 sub,
-sup 		{ font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
-sup 		{ top: -0.5em; }
-sub 		{ bottom: -0.25em; }
-blockquote 	{ margin: 0 1.125em 1.125em; padding: 1.125em 1.125em .5em; display: block; background: #eee; font-style: italic; overflow: hidden; }
+sup 			{ font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup 			{ top: -0.5em; }
+sub 			{ bottom: -0.25em; }
+blockquote 		{ margin: 0 1.125em 1.125em; padding: 1.125em; border-left: .25em solid $secondaryColor; display: block; background: #eee; font-style: italic; overflow: hidden; }
+blockquote p	{ font-size: 1em; }
 
 hr 	{ margin: 0 0 1.25em; padding: 0; height: 1px; display: block; border: 0; border-top: 1px solid #ccc; clear: both; }
 
@@ -141,8 +140,8 @@ hr 	{ margin: 0 0 1.25em; padding: 0; height: 1px; display: block; border: 0; bo
 		li:hover ul		{ display: block; }
 		li li 			{ margin: 0; float: none; clear: both; }
 		li li a,
-		li.active li a	{ padding: .75em; width: 150px; height: auto; border-bottom: 1px solid $seconColor; background: $primColor; color: #ccc; text-decoration: none; }
-		li li a:hover 	{ background: $seconColor; }
+		li.active li a	{ padding: .75em; width: 150px; height: auto; border-bottom: 1px solid $secondaryColor; background: $primaryColor; color: #ccc; text-decoration: none; }
+		li li a:hover 	{ background: $secondaryColor; }
 		
 	} /* end .header nav */
 	
@@ -150,24 +149,24 @@ hr 	{ margin: 0 0 1.25em; padding: 0; height: 1px; display: block; border: 0; bo
 
 /* ===CONTENT START=== */
 
-.content-main 	{ margin-bottom: 1.25em; }
+.content 	{ margin-bottom: 1.25em; }
 
 
 /* ===SIDEBAR START=== */
 
-.sidebar { margin-bottom: 1.25em; }
+.sidebar { }
 
 
 /* ===FOOTER START=== */
 
-.footer { padding: 1.25em 0; background: $primColor; color: #fff;
+.footer { padding: 1.25em 0; background: $primaryColor; color: #fff;
 
-	nav ul			{ font-size: .75em; }
+	nav ul				{ font-size: .75em; }
 	nav ul ul			{ display: none; }
-	nav li 			{ margin-left: .75em; padding-left: .75em; border-left: 1px solid #fff; }
+	nav li 				{ margin-left: .75em; padding-left: .75em; border-left: 1px solid #fff; }
 	nav li:first-child	{ margin: 0; padding: 0; border: none; }
-	p, ul 			{ margin-bottom: 1em; }
-	a 				{ color: #fff; }
+	p, ul 				{ margin-bottom: 1em; }
+	a 					{ color: #fff; }
 	
 } /* end footer */
 
@@ -175,17 +174,21 @@ hr 	{ margin: 0 0 1.25em; padding: 0; height: 1px; display: block; border: 0; bo
 
 @media only screen and (min-width: 480px) { 
   /* Style adjustments for viewports 480px and over go here */
+  
   	#container 		{ margin: 0 0 0 10%; width: 80%; } /* 960 / 1200px */
 	.wrapper 		{ margin: 0 0 0 10%; width: 80%; }
 	
 	.content-main 	{ width: 74.375%; float: left; }
 	.sidebar 		{ width: 23.125%; float: right; }
+	
 }
 
 @media only screen and (min-width: 768px) { 
   /* Style adjustments for viewports 768px and over go here */
+  
 	ul.inline li				{ margin-left: 1em; float: left; }
 	ul.inline li:first-child	{ margin: 0; }
+	
 }
 
 @media only print { 
