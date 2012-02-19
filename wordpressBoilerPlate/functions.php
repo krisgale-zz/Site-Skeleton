@@ -10,6 +10,19 @@ add_theme_support('post-thumbnails');
 update_option('image_default_link_type','none');
 if ( ! isset( $content_width ) ) $content_width = 960;
 
+// Remove the version number of WP
+// Warning - this info is also available in the readme.html file in your root directory - delete this file!
+remove_action('wp_head', 'wp_generator');
+
+
+// Obscure login screen error messages
+function login_obscure(){ return '<strong>Sorry</strong>: Think you have gone wrong somwhere!';}
+add_filter( 'login_errors', 'login_obscure' );
+
+
+// Disable the theme / plugin text editor in Admin
+define('DISALLOW_FILE_EDIT', true);
+
 //Custom Comments List
 if ( ! function_exists( 'ps_comment' ) ) :
 
@@ -217,13 +230,6 @@ function cmpMenuOrder( $a, $b ) {
 	return ( $a->menu_order < $b->menu_order ) ? -1 : 1;
 }
 
-
-// [google-map] shortcode
-function map_shortcode( $atts, $content = NULL ) {
-	$html ="<div id=\"map\"></div><div class=\"directionswrapper\"><div id=\"directionsform\"><h2>Get Driving Directions:</h2><form onsubmit=\"getdirections();return false;\" class=\"clearfix\"><p><label for=\"fromaddress\">From:</label> <input id=\"fromaddress\" class=\"textbox\" /> <label for=\"toaddress\">To:</label> <select id=\"toaddress\"><option value=\"321 Stonehenge Drive Phillipsburg, NJ 0886\">Middle School</option><option value=\"263 Route 57 Phillipsburg, NJ 08865\">Elementary School</option></select> <span class=\"button\"><input class=\"button\" type=\"submit\" value=\"Get Directions\" /></span></p></form></div><div id=\"dirholder\"></div></div>";
-	return do_shortcode( $html );
-}
-add_shortcode( 'google-map', 'map_shortcode' );
 */
 
 ?>
