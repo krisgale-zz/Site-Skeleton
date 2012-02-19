@@ -86,7 +86,7 @@ ol ol 	{ margin: 0; font-size: 1em; }
 ul.inline			{ margin: 0; padding: 0; border: none; background: none; list-style: none; }
 ul.inline > li > ul	{ margin-bottom: 1.666em; }
 
-img 	{ max-width: 100%; height: auto; display: block; }
+img 	{ max-width: 100%; height: auto; display: block; -ms-interpolation-mode: bicubic; }
 
 figure 			{ margin-bottom : .625em; max-width: 100%!important; height: auto!important; }
 figure img,

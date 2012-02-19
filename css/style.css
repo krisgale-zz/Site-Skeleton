@@ -423,6 +423,7 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+  -ms-interpolation-mode: bicubic;
 }
 
 /* line 91, scss/style.scss */

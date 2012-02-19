@@ -16,7 +16,17 @@
 <meta property="og:description" content="">
 <!--END OPEN GRAPH FOR FACEBOOK-->
 
+<!-- For iPhone 4 -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ui/apple-touch-icon.png">
+<!-- For iPad 1-->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ui/apple-touch-icon.png">
+<!-- For iPhone 3G, iPod Touch and Android -->
+<link rel="apple-touch-icon-precomposed" href="images/ui/apple-touch-icon-precomposed.png">
+<!-- For Nokia -->
+<link rel="shortcut icon" href="images/ui/apple-touch-icon.png">
+<!-- For everything else -->
 <link rel="shortcut icon" href="images/ui/favicon.ico">
+
 <link rel="stylesheet" href="css/style.css">
 <link rel="alternate" href="blog/feed/" type="application/rss+xml" title="Site Name's RSS Feed">
 <link rel="canonical" href="">
