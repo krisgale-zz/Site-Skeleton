@@ -37,9 +37,12 @@
 </head>
 <body>
 <div id="container">
+
 	<header class="header clearfix">
+	
 		<a class="logo" href="#">Site Name</a>
-		<nav>
+		
+		<nav role="navigation">
 			<ul class="clearfix inline">
 				<li><a href="#">Home</a></li>
 				<li><a href="#">About</a>
@@ -59,4 +62,5 @@
 				<li><a href="#">Contact</a></li>
 			</ul>
 		</nav><!--/end nav-->
+		
 	</header><!--/end .header-->

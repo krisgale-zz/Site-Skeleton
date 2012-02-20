@@ -8,23 +8,23 @@ add_theme_support('menus');
 add_theme_support('automatic-feed-links');
 add_theme_support('post-thumbnails');
 update_option('image_default_link_type','none');
-if ( ! isset( $content_width ) ) $content_width = 960;
+if ( !isset( $content_width ) ) $content_width = 960;
 
 // Remove the version number of WP
 // Warning - this info is also available in the readme.html file in your root directory - delete this file!
-remove_action('wp_head', 'wp_generator');
+remove_action( 'wp_head', 'wp_generator' );
 
 
 // Obscure login screen error messages
-function login_obscure(){ return '<strong>Sorry</strong>: Think you have gone wrong somwhere!';}
+function login_obscure(){ return '<strong>Sorry</strong>: Think you have gone wrong somwhere!'; }
 add_filter( 'login_errors', 'login_obscure' );
 
 
 // Disable the theme / plugin text editor in Admin
-define('DISALLOW_FILE_EDIT', true);
+define( 'DISALLOW_FILE_EDIT', true );
 
 //Custom Comments List
-if ( ! function_exists( 'ps_comment' ) ) :
+if ( !function_exists( 'ps_comment' ) ) :
 
 function ps_comment( $comment, $args, $depth ) {
 	$GLOBALS[ 'comment' ] = $comment;

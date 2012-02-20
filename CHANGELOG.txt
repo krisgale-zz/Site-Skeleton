@@ -1,4 +1,14 @@
 --------
+3.1
+--------
+added security functions to WordPress
+updated mordernizr
+updated respond.js
+reformatted css for headings, fixed bugs with colors and included Sass files
+added image intepolation style for IE resizing
+added bookmark icons, and updated favicon
+
+--------
 3.0
 --------
 Official Site Skeleton Launch
