@@ -12,7 +12,7 @@
 			<?php wp_list_categories('show_count=1&title_li='); ?>
 			</ul>
 		</li>
-		<?php dynamic_sidebar( 'divas_widgets' ); ?>
+		<?php dynamic_sidebar( 'ps_widgets' ); ?>
 	</ul>
 </aside><!--end .sidebar-->
 
